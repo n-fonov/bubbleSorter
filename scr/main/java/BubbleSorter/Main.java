@@ -1,4 +1,4 @@
-package main;
+package BubbleSorter;
 
 import java.util.ArrayList;
 
@@ -47,11 +47,22 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
+        System.out.println("Домашка по алгоритмике: Задача 1.");
+
         generateArray();
         System.out.println("Несортированный список: " + arrayToSort.toString());
         bubbleSort(arrayToSort, true);
         System.out.println("Сортированный по возрастанию список: " + arrayToSort.toString());
         bubbleSort(arrayToSort, false);
         System.out.println("Сортированный по убыванию список: " + arrayToSort.toString());
+
+        System.out.println("-------------------------");
+
+        System.out.println("Домашка по алгоритмике: Задача 2.");
+        String firstWord = "cat";
+        String secondWord = "dog";
+        String[] wordsBetween = new String[] {"cag", "cat", "dog", "fog", "pog"};
+        PathFinder.hasConnectionBetween(firstWord, secondWord, wordsBetween);
     }
 }
